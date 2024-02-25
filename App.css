@@ -52,6 +52,7 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
 }
 
@@ -167,37 +168,37 @@ a:hover, a.current {
 }
 .card-container[data-type=work]::before {
   background-color: var(--clr-prm-red-100);
-  background-image: url(/images/icon-work.svg);
+  background-image: url(./images/icon-work.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) -10px;
 }
 .card-container[data-type=play]::before {
   background-color: var(--clr-prm-blue-200);
-  background-image: url(/images/icon-play.svg);
+  background-image: url(./images/icon-play.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) -10px;
 }
 .card-container[data-type=study]::before {
   background-color: var(--clr-prm-red-200);
-  background-image: url(/images/icon-study.svg);
+  background-image: url(./images/icon-study.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) -10px;
 }
 .card-container[data-type=exercise]::before {
   background-color: var(--clr-prm-green-100);
-  background-image: url(/images/icon-exercise.svg);
+  background-image: url(./images/icon-exercise.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) -2px;
 }
 .card-container[data-type=social]::before {
   background-color: var(--clr-ntr-blue-300);
-  background-image: url(/images/icon-social.svg);
+  background-image: url(./images/icon-social.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) 0;
 }
 .card-container[data-type=self-care]::before {
   background-color: var(--clr-prm-red-300);
-  background-image: url(/images/icon-self-care.svg);
+  background-image: url(./images/icon-self-care.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) -10px;
 }

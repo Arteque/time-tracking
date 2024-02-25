@@ -200,6 +200,7 @@ section{
     display: flex;
     align-items: center;
     justify-content:center;
+    flex-direction: column;
 }
 .main-content-container{
     @include tablet{
@@ -229,9 +230,7 @@ section{
     background-color: var(--black);
     padding-block: 1rem;
     color: var(--gray-100);
-    position:absolute;
-    bottom: 0;
-    width: 100%;
+    padding-block-start: 5rem;
     a{
         color: var(--grey);
         text-decoration: underline;

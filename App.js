@@ -18,6 +18,7 @@ getData()
 .then(() => {
     mainContentContainer.innerHTML = dataArr.map(cardTemplate).join("")
 })
+//Template
 function cardTemplate(item){
     let title = item.title.toLowerCase().trim().replace(" ", "-")
     return `

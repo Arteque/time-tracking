@@ -22,11 +22,8 @@ html,body{
     max-width: 1440px;
     padding-inline: 2rem;
     margin-inline:auto;
-    @include tablet{
-        display:flex;
-        gap: 2rem;
-    }
     @include desktop{
+        gap: 2rem;
         display:flex;
         width: 100%;
     }
@@ -67,6 +64,17 @@ a{
             border: 3px solid var(--clr-ntr-white-100);
             border-radius: 50%;
             margin-block-end: 3rem;
+        }
+       .card-body{
+            border-radius: 0 0 var(--raduis) var(--radius);
+            ul{
+                display:flex;
+                width: 100%;
+                justify-content:space-between;
+                @include tablet{
+                    display:block;
+                }
+            }
         }
     }  
     &:not(.profile-card){
@@ -111,7 +119,20 @@ a{
             pointer-events: none;
             &.current{
                 pointer-events: auto;
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .main-data{
+                    font-size: 1rem;
+                    margin-block-start:unset;
+                }
+                @include desktop{
+                    display:block; 
+                    .main-data{
+                        font-size: 4rem;
+                        margin-block-start: 1rem;
+                    }
+                }
                 span{
                     opacity: 0;
                     position: relative;
@@ -124,11 +145,12 @@ a{
         }
     }
     .main-data{
-            font-size: 4rem;
-            font-weight:100;
-            margin-block-start: 2rem;
-            display:block;
+        @include desktop{
+                font-size: 4rem;
+                font-weight:100;
+                display:block;
         }
+    }
     .details-data{
             color: var(--clr-ntr-blue-400);
             font-size: smaller;
@@ -203,15 +225,11 @@ section{
     flex-direction: column;
 }
 .main-content-container{
-    @include tablet{
+    @include desktop{
         flex-grow: 1;
         display: grid;
-        display:grid;
-        grid-template-columns:1fr 1fr;
         align-items: stretch;
         justify-items: stretch;
-    }
-    @include desktop{
         grid-template-columns:1fr 1fr 1fr;
         gap: 2rem;
         .card-container{

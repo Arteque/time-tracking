@@ -1,0 +1,48 @@
+// Clrs Plts
+$clrs:(
+    prm:(
+        blue:(
+            100: hsl(246, 80%, 60%),
+            200: hsl(195, 74%, 62%)
+        ),
+        red:(
+            100: hsl(15, 100%, 70%),
+            200: hsl(348, 100%, 68%),
+            300: hsl(43, 84%, 65%)
+        ),
+        green:(
+            100:hsl(145, 58%, 55%)
+        )
+    ),
+
+    ntr:(
+        blue:(
+            100: hsl(226, 43%, 10%),
+            200: hsl(235, 46%, 20%),
+            300: hsl(235, 45%, 61%),
+            400: hsl(236, 100%, 87%)
+        ),
+        white:(
+            100: hsl(0, 0%, 93%)
+        )
+    )
+);
+
+@mixin tablet{
+    @media screen and (min-width:800px){@content;}
+}
+@mixin desktop{
+    @media screen and (min-width:1000px){@content;}
+}
+
+:root{
+    --sans : "Rubik", sans-serif;
+    @each $prnt, $prntvls in $clrs{
+        @each $subclrs, $subclrvls in $prntvls{
+           @each $childclr, $childvl in $subclrvls{
+                --clr-#{$prnt}-#{$subclrs}-#{$childclr}: #{$childvl};
+           }
+        }
+    }
+    --radius: 10px;
+}

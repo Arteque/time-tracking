@@ -1,0 +1,15 @@
+:root {
+  --sans: "Rubik", sans-serif;
+  --clr-prm-blue-100: hsl(246, 80%, 60%);
+  --clr-prm-blue-200: hsl(195, 74%, 62%);
+  --clr-prm-red-100: hsl(15, 100%, 70%);
+  --clr-prm-red-200: hsl(348, 100%, 68%);
+  --clr-prm-red-300: hsl(43, 84%, 65%);
+  --clr-prm-green-100: hsl(145, 58%, 55%);
+  --clr-ntr-blue-100: hsl(226, 43%, 10%);
+  --clr-ntr-blue-200: hsl(235, 46%, 20%);
+  --clr-ntr-blue-300: hsl(235, 45%, 61%);
+  --clr-ntr-blue-400: hsl(236, 100%, 87%);
+  --clr-ntr-white-100: hsl(0, 0%, 93%);
+  --radius: 10px;
+}/*# sourceMappingURL=Var.css.map */
